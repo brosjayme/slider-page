@@ -14,4 +14,15 @@
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
+    breakpoints:{
+        0:{
+            slidersPerview: 1,
+        },
+        520:{
+            slidersPerview: 2,
+        },
+        950:{
+            slidersPerview: 3,
+        },
+    }
  })

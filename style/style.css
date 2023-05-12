@@ -16,13 +16,11 @@ body{
 .slide-container{
 max-width: 1120px;
 width: 100%;
-background: grey;
 padding: 40px 0;
 }
 
 .slide-content{
     margin: 0 40px;
-    background: red;
     overflow: hidden;
     border-radius: 25px;
 
@@ -118,4 +116,12 @@ padding: 40px 0;
 .swiper-pagination-bullet{
     background-color: #6e93f7;
     opacity: 1;
+}
+@media screen and (max-width: 768) {
+    .slide-content{
+        margin: 0 10px;
+    }
+    .swiper-navBtn{
+    display: none;
+}
 }
