@@ -13,12 +13,18 @@ body{
     justify-content: center;
     background: #efefef;
 }
+.slide-container{
+max-width: 1120px;
+width: 100%;
+background: grey;
+padding: 40px 0;
+}
+
 .slide-content{
     margin: 0 40px;
 
 }
 .card{
-    width: 320px;
     border-radius: 25px;
     background: #FFF;
 }
@@ -29,8 +35,36 @@ body{
     padding: 10px 14px;
 }
 .image-content{
+    position: relative;
     row-gap: 5px;
+    border-radius: 25px 0;
 }
+
+.overlay{
+    position:absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: #4070F4;
+    border-radius: 25px 25px 0 25px;
+}
+.overlay::before,
+.overlay::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background: #4070F4;
+}
+.overlay::after{
+  border-radius: 0 25px 0 0; 
+   background: #FFF;
+
+}
+
 .card-image{
     position: relative;
     height: 150px;
@@ -55,4 +89,18 @@ body{
     font-size: 14px;
     color: #707070;
     text-align: center;
+}
+.button{
+    border: none;
+    font-size: 16px;
+    color: #FFF;
+    padding: 8px 16px;
+    background: #4070F4;
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.button:hover{
+    background: #0000ff;
 }
